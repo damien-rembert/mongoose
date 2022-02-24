@@ -15,6 +15,8 @@ const app = async (yargsObj) => {
                 console.log(await list({actor: yargsObj.actor}));
             } else if (yargsObj.year) {
                 console.log(await list({year: yargsObj.year}));
+            } else if (yargsObj.rating) {
+                console.log(await list({rating: yargsObj.rating}));
             } else {
                 console.log(await list());
             }
